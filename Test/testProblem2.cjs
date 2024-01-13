@@ -1,11 +1,13 @@
 const {problem2} = require('../fs-Problem2.cjs');
 
 
-(async () => {
+async function success () {
     try{
-        await problem2('lipsum.txt');
+        await problem2("../lipsum.txt");
         console.log("Operation Completed Sucessfully.");
-    } catch {
+    } catch(err) {
         console.log("Error:", err);
     }
-})();
+};
+
+success();

@@ -1,3 +1,5 @@
 uppercaseData.txt
 lowercaseSentences.txt
+sortedSentenceFile.txtuppercaseData.txt
+lowercaseSentences.txt
 sortedSentenceFile.txt

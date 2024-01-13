@@ -8,13 +8,15 @@ const problem2 = (filePath) => {
       allFiles.forEach((ele) => {
         fs.unlink(ele, (err) => {
           if (err) reject(err);
+          resolve("resolved");
         });
       });
     };
     const readFileHavingAllNames = () => {
       fs.readFile("filenames.txt", "utf-8", (err, data) => {
         if (err) reject(err);
-        resolve("resolved");
+       
+        deleteAllFiles(data);
       });
     };
 
@@ -87,7 +89,6 @@ const problem2 = (filePath) => {
     fs.readFile(filePath, "utf-8", (err, data) => {
       if (err) {
         reject(err);
-        return;
       }
       writeFileOfUppercase(data);
     });
