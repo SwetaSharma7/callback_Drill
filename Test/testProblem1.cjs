@@ -1,4 +1,10 @@
-const {problem1} = require("../problem1.cjs");
+const { problem1 } = require("../fs-Problem1.cjs");
 
-
-problem1("./sweta", Math.round(10*Math.random() + 1) ); 
+(async () => {
+  try {
+    await problem1("./swetaaa", Math.round(10 * Math.random() + 1));
+    console.log("Operation completed successfully.");
+  } catch (err) {
+    console.error("Error:", err);
+  }
+})();
